@@ -1,7 +1,7 @@
-FROM debian:buster
+FROM alpine:latest
 
-RUN apt-get update \
-    && apt-get install -yq \
+RUN apk update \
+    && apt add \
         build-essential \
         htop \
         jq \
@@ -9,4 +9,3 @@ RUN apt-get update \
         locales \
         sudo \
         vim
-
