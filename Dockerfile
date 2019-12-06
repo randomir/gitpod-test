@@ -8,4 +8,6 @@ RUN apk update \
         less \
         locales \
         sudo \
-        vim
+        vim \
+        nmap \
+        curl
