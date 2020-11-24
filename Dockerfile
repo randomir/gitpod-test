@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
 RUN apt-get update \
-    && apt-get install \
+    && apt-get install -yq --no-install-recommends \
         build-essential \
         htop \
         jq \
@@ -10,4 +10,5 @@ RUN apt-get update \
         sudo \
         vim \
         nmap \
-        curl
+        curl \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
