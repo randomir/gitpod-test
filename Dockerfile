@@ -1,6 +1,6 @@
 FROM python:3.9-slim
 
-RUN apk update \
+RUN apt update \
     && apt add \
         build-essential \
         htop \
