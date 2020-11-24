@@ -12,3 +12,6 @@ RUN apt-get update \
         nmap \
         curl \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
+
+USER root
+COPY README.md /var/
